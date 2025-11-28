@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roller Blinds - Products</title>
+
+  <!-- Common styles -->
+  <link rel="stylesheet" href="global.css">
+  <!-- Product page specific styles -->
+  <link rel="stylesheet" href="products.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="logo">
+      <a href="index.html#home">
+        <img src="logo.png" alt="Roller Blinds Logo">
+      </a>
+    </div>
+
+    <nav class="nav-links">
+      <ul>
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="aboutus.html">About us</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="cta">
+      <a href="index.html#contact" class="btn btn-outline">Get Quote</a>
+    </div>
+
+    <!-- HAMBURGER BUTTON (mobile) -->
+    <button class="menu-toggle" type="button" onclick="toggleMenu()" aria-label="Open menu">
+      ☰
+    </button>
+  </header>
+
+  <!-- MOBILE SIDE MENU -->
+  <div class="mobile-menu-overlay" onclick="overlayClick(event)">
+    <div class="mobile-menu">
+      <button class="close-menu" type="button" onclick="toggleMenu()" aria-label="Close menu">
+        ✕
+      </button>
+
+      <ul>
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="aboutus.html">About us</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+
+      <a href="index.html#contact" class="mobile-cta">Talk to an Expert</a>
+    </div>
+  </div>
+
+  <main>
+    <!-- Page heading -->
+    <section class="roller">
+      <h1>Roller Blinds</h1>
+    </section>
+
+    <!-- Text + Image block -->
+    <section class="roller-intro">
+      <div class="intro-image">
+        <img src="https://i.pinimg.com/474x/91/90/8d/91908d2991e12407d98a3886b200f883.jpg" alt="Roller Blinds">
+      </div>
+
+      <div class="intro-text">
+        <h2>Roller Blinds</h2>
+        <p>
+          Roller Blinds are a premium and modern window treatment solution, designed to offer excellent privacy,
+          temperature control, and a clean aesthetic. With their sleek rolling mechanism, they effortlessly enhance
+          any interior.
+        </p>
+        <p>
+          The fabric rolls up neatly into a compact top tube, keeping your windows clutter-free while allowing you
+          to control natural light with ease. Durable, elegant, and highly versatile — Roller Blinds are ideal for
+          both residential and commercial spaces.
+        </p>
+      </div>
+    </section>
+
+    <!-- SHOP BY CATEGORY -->
+    <section class="categories">
+      <div class="categories-header">
+        <h2>SHOP BY CATEGORY</h2>
+        <p>Top Quality & Style at Low Prices</p>
+      </div>
+
+      <div class="category-grid">
+        <!-- Manual -->
+        <a href="#manual-cat" class="category-link">
+          <div class="category-card">
+            <img src="https://i.pinimg.com/474x/91/90/8d/91908d2991e12407d98a3886b200f883.jpg"
+                 alt="Manual Roller Blinds">
+            <div class="category-title">
+              MANUAL - CHAIN OPERATED
+              <span>(without Remote)</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Motorized -->
+        <a href="#motorized-cat" class="category-link">
+          <div class="category-card">
+            <img src="https://media.istockphoto.com/id/2208111831/photo/motorized-wood-blinds-operating-with-control-panel.webp?a=1&b=1&s=612x612&w=0&k=20&c=AQHXrIBq06Yh5eEl-aUaGbpMaJuArQ2UhBbit_0vN9k="
+                 alt="Motorized Roller Blinds">
+            <div class="category-title">
+              MOTORIZED
+              <span>(with Remote)</span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- MANUAL CATEGORY -->
+    <section class="cat-section" id="manual-cat">
+      <div class="cat-header">
+        <h2>MANUAL CHAIN OPERATED</h2>
+        <p>Latest Styles & Largest Collections</p>
+      </div>
+
+      <div class="products-grid">
+        <!-- Product 1 -->
+        <div class="product-card">
+          <img class="img-default"
+               src="https://blindskart.com/wp-content/uploads/2021/08/BK-ROL-D-001-compressed-3-300x400.jpg"
+               alt="Blackout Roller Blinds White">
+          <img class="img-hover"
+               src="https://blindskart.com/wp-content/uploads/2021/08/BK-ROLBO-D-001-300x400.jpg"
+               alt="Blackout Roller Blinds White Blackout">
+          <h3>Blackout Roller Blinds</h3>
+          <p>White</p>
+          <p>White Blackout</p>
+          <p class="price">From ₹3250 <span>(Inc. GST)</span></p>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-card">
+          <img class="img-default"
+               src="https://blindskart.com/wp-content/uploads/2021/11/BK-ROL-H-003-compressed-300x400.jpg"
+               alt="Blackout Roller Blinds Brown">
+          <img class="img-hover"
+               src="https://blindskart.com/wp-content/uploads/2021/11/BK-ROL-H-003-300x400.jpg"
+               alt="Blackout Roller Blinds Brown">
+          <h3>Blackout Roller Blinds</h3>
+          <p>Brown</p>
+          <p>Brown Blackout</p>
+          <p class="price">From ₹3250 <span>(Inc. GST)</span></p>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-card">
+          <img class="img-default"
+               src="https://blindskart.com/wp-content/uploads/2021/08/BK-ROL-A-002-compressed-300x400.jpg"
+               alt="Blackout Roller Blinds Beige">
+          <img class="img-hover"
+               src="https://blindskart.com/wp-content/uploads/2021/08/BK-ROL-A-002-300x400.jpg"
+               alt="Blackout Roller Blinds Beige">
+          <h3>Blackout Roller Blinds</h3>
+          <p>Beige</p>
+          <p>Beige Blackout</p>
+          <p class="price">From ₹3250 <span>(Inc. GST)</span></p>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="product-card">
+          <img class="img-default"
+               src="https://blindskart.com/wp-content/uploads/2021/09/BK-ROL-F-006-compressed-300x400.jpg"
+               alt="Sunscreen Roller Blinds Brown">
+          <img class="img-hover"
+               src="https://blindskart.com/wp-content/uploads/2021/09/BK-ROL-F-006--300x400.jpg"
+               alt="Sunscreen Roller Blinds Brown">
+          <h3>Sunscreen Roller Blinds</h3>
+          <p>Brown</p>
+          <p>Brown Blackout</p>
+          <p class="price">From ₹3250 <span>(Inc. GST)</span></p>
+        </div>
+
+        <!-- Product 5 -->
+        <div class="product-card">
+          <img class="img-default"
+               src="https://blindskart.com/wp-content/uploads/2021/11/BK-ROL-F-004-compressed-300x400.jpg"
+               alt="Sunscreen Roller Blinds Cream">
+          <img class="img-hover"
+               src="https://blindskart.com/wp-content/uploads/2021/11/BK-ROL-F-004-300x400.jpg"
+               alt="Sunscreen Roller Blinds Cream">
+          <h3>Sunscreen Roller Blinds</h3>
+          <p>Cream</p>
+          <p>Cream Blackout</p>
+          <p class="price">From ₹3250 <span>(Inc. GST)</span></p>
+        </div>
+
+        <!-- Product 6 -->
+        <div class="product-card">
+          <img class="img-default"
+               src="https://blindskart.com/wp-content/uploads/2021/11/BK-ROL-F-003-compressed-300x400.jpg"
+               alt="Sunscreen Roller Blinds Harmony">
+          <img class="img-hover"
+               src="https://blindskart.com/wp-content/uploads/2021/11/BK-ROL-F-003-300x400.jpg"
+               alt="Sunscreen Roller Blinds Harmony">
+          <h3>Sunscreen Roller Blinds</h3>
+          <p>Harmony</p>
+          <p>Harmony Blackout</p>
+          <p class="price">From ₹3250 <span>(Inc. GST)</span></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- MOTORIZED CATEGORY -->
+    <section class="cat-section" id="motorized-cat">
+      <div class="cat-header">
+        <h2>MOTORIZED</h2>
+        <p>Smart Controls & Premium Designs</p>
+      </div>
+
+      <div class="products-grid">
+        <div class="product-card motor-card">
+          <img class="img-default"
+               src="https://blindskart.com/wp-content/uploads/2021/11/BK-ZEB-F-001-300x400.jpg"
+               alt="Smart Motorized Roller Blind">
+          <h3>Smart Motorized Roller Blind</h3>
+          <p class="price">From ₹8250 <span>(Inc. GST)</span></p>
+        </div>
+
+        <div class="product-card motor-card">
+          <img class="img-default"
+               src="https://blindskart.com/wp-content/uploads/2021/10/Vertical_921-300x400.jpg"
+               alt="Smart Motorized Roller Blind">
+          <h3>Smart Motorized Roller Blind</h3>
+          <p class="price">From ₹8250 <span>(Inc. GST)</span></p>
+        </div>
+
+        <div class="product-card motor-card">
+          <img class="img-default"
+               src="https://blindskart.com/wp-content/uploads/2021/10/Duck10001000px-300x400.jpg"
+               alt="Smart Motorized Roller Blind">
+          <h3>Smart Motorized Roller Blind</h3>
+          <p class="price">From ₹8250 <span>(Inc. GST)</span></p>
+        </div>
+
+        <div class="product-card motor-card">
+          <img class="img-default"
+               src="https://blindskart.com/wp-content/uploads/2021/10/Elephant10001000px-300x400.jpg"
+               alt="Smart Motorized Roller Blind">
+          <h3>Smart Motorized Roller Blind</h3>
+          <p class="price">From ₹8250 <span>(Inc. GST)</span></p>
+        </div>
+
+        <div class="product-card motor-card">
+          <img class="img-default"
+               src="https://blindskart.com/wp-content/uploads/2021/10/Vertical_638-300x400.jpg"
+               alt="Smart Motorized Roller Blind">
+          <h3>Smart Motorized Roller Blind</h3>
+          <p class="price">From ₹8250 <span>(Inc. GST)</span></p>
+        </div>
+
+        <div class="product-card motor-card">
+          <img class="img-default"
+               src="https://blindskart.com/wp-content/uploads/2021/11/BK-ZEB-F-001-300x400.jpg"
+               alt="Smart Motorized Roller Blind">
+          <h3>Smart Motorized Roller Blind</h3>
+          <p class="price">From ₹8250 <span>(Inc. GST)</span></p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- SIMPLE NAV TOGGLE JS -->
+  <script>
+    function toggleMenu() {
+      document.body.classList.toggle('menu-open');
+    }
+
+    function overlayClick(event) {
+      if (event.target.classList.contains('mobile-menu-overlay')) {
+        document.body.classList.remove('menu-open');
+      }
+    }
+
+    document.addEventListener('click', function (e) {
+      if (e.target.closest('.mobile-menu a')) {
+        document.body.classList.remove('menu-open');
+      }
+    });
+  </script>
+</body>
+</html>

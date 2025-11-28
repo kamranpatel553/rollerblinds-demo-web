@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us - Roller Blinds</title>
+
+  <!-- Same global styles -->
+  <link rel="stylesheet" href="global.css">
+
+  <!-- Page-specific internal CSS -->
+  <style>
+    /* ABOUT PAGE ONLY */
+
+    .about-hero {
+      background: linear-gradient(to right, #0b3a66, #5ec5e6);
+      height: 260px;
+      margin-top: 80px; 
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--white);
+      font-size: 40px;
+      font-weight: 700;
+    }
+
+    .about-section {
+      padding: 60px 60px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .about-section h2 {
+      margin-bottom: 10px;
+      color: var(--roller);
+    }
+
+    .about-section h3 {
+      color: var(--text);
+    }
+
+    .story {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .story p {
+      flex: 1;
+      min-width: 300px;
+      line-height: 1.7;
+    }
+
+    .story img {
+      flex: 1;
+      min-width: 260px;
+      max-width: 420px;
+      border-radius: 10px;
+      object-fit: cover;
+      transition: var(--transition);
+    }
+
+    .story img:hover {
+      transform: scale(1.02);
+    }
+
+    .expertise-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+      text-align: right;
+    }
+
+    .expertise-gallery img {
+      width: 100%;
+      border-radius: 10px;
+      transition: var(--transition);
+      object-fit: cover;
+      height: 190px;
+    }
+
+    .expertise-gallery img:hover {
+      transform: scale(1.03);
+    }
+
+    .why-us {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .why-us .card {
+      padding: 20px;
+      background: var(--white);
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+      border-top: 4px solid var(--blinds);
+      transition: var(--transition);
+    }
+
+    .why-us .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+
+    @media (max-width: 900px) {
+      .about-section {
+        padding: 40px 24px;
+      }
+
+      .about-hero {
+        height: 220px;
+        font-size: 32px;
+        margin-top: 90px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .about-section {
+        padding: 32px 20px;
+      }
+
+      .about-hero {
+        height: 200px;
+        font-size: 26px;
+        text-align: center;
+        margin-top: 100px;
+        padding: 0 16px;
+      }
+
+      .story {
+        flex-direction: column;
+      }
+
+      .story img {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="logo">
+      <a href="index.html#home">
+        <img src="logo.png" alt="Roller Blinds Logo">
+      </a>
+    </div>
+
+    <nav class="nav-links">
+      <ul>
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="aboutus.html">About us</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="cta">
+      <a href="index.html#contact" class="btn btn-outline">Get Quote</a>
+    </div>
+
+    <!-- HAMBURGER BUTTON -->
+    <button class="menu-toggle" type="button" onclick="toggleMenu()" aria-label="Open menu">
+      ☰
+    </button>
+  </header>
+
+  <!-- MOBILE SIDE MENU -->
+  <div class="mobile-menu-overlay" onclick="overlayClick(event)">
+    <div class="mobile-menu">
+      <button class="close-menu" type="button" onclick="toggleMenu()" aria-label="Close menu">
+        ✕
+      </button>
+
+      <ul>
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="aboutus.html">About us</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+
+      <a href="index.html#contact" class="mobile-cta">Talk to an Expert</a>
+    </div>
+  </div>
+
+  <main>
+    <!-- HERO -->
+    <section class="about-hero">
+      About Us
+    </section>
+
+    <!-- SECTION 1: Story -->
+    <section class="about-section">
+      <h2>Our Company Story</h2>
+      <div class="story">
+        <p>
+          Founded in 2012, <strong style="color: var(--blinds);">DreamNest Interiors</strong> was built with a simple vision:
+          to transform houses into homes and spaces into experiences. What started as a small, passionate team of designers
+          has now grown into a full-service interior solutions brand trusted by 3,000+ customers.
+          <br><br>
+          We believe interiors aren't just about décor – they are about lifestyle, mood, and comfort. Over the years, we
+          have mastered the art of blending creativity with functionality. Our mission is to deliver premium designs that
+          reflect individuality, elegance, and long-lasting quality.
+        </p>
+        <img src="interior1.jpg" alt="Company Story Image">
+      </div>
+    </section>
+
+    <!-- SECTION 2: Expertise -->
+    <section class="about-section">
+      <h2 style="text-align: right;">Our Expertise</h2>
+      <p style="text-align: right;">
+        With 12+ years of hands-on experience in residential and commercial interior design, we specialize in:
+      </p>
+      <div class="expertise-gallery">
+        <img src="livingroom.jpg" alt="Living Room Design">
+        <img src="kitchen.jpg" alt="Kitchen Design">
+        <img src="bedroom.jpg" alt="Bedroom Design">
+        <img src="office.jpg" alt="Office Interiors">
+      </div>
+      <p style="margin-top:20px; text-align: right;">
+        Our designers work closely with clients, understand requirements, and deliver customized interiors using premium
+        materials, modern technology, and a perfect balance of style + practicality.
+      </p>
+    </section>
+
+    <!-- SECTION 3: Why Choose Us -->
+    <section class="about-section">
+      <h2 style="text-align: center;">Why Choose Us?</h2>
+
+      <div class="why-us">
+        <div class="card">
+          <h3>✔ Premium Quality</h3>
+          <p>We use high-grade materials to ensure long-lasting, durable interiors that stay beautiful for years.</p>
+        </div>
+        <div class="card">
+          <h3>✔ 100% Custom Designs</h3>
+          <p>Every space is unique — we tailor each design to fit your lifestyle, taste, and functionality needs.</p>
+        </div>
+        <div class="card">
+          <h3>✔ On-Time Delivery</h3>
+          <p>Our project management ensures timely execution without compromising on design or quality.</p>
+        </div>
+        <div class="card">
+          <h3>✔ Expert Team</h3>
+          <p>Our team of designers, engineers, and craftsmen bring years of expertise to every project.</p>
+        </div>
+        <div class="card">
+          <h3>✔ Transparent Pricing</h3>
+          <p>No hidden charges — we offer clear estimates with complete cost breakdowns.</p>
+        </div>
+        <div class="card">
+          <h3>✔ End-to-End Service</h3>
+          <p>From planning to execution, we handle everything so you enjoy a smooth, stress-free experience.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- SIMPLE NAV TOGGLE JS -->
+  <script>
+    function toggleMenu() {
+      document.body.classList.toggle('menu-open');
+    }
+
+    function overlayClick(event) {
+      if (event.target.classList.contains('mobile-menu-overlay')) {
+        document.body.classList.remove('menu-open');
+      }
+    }
+
+    document.addEventListener('click', function (e) {
+      if (e.target.closest('.mobile-menu a')) {
+        document.body.classList.remove('menu-open');
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roller Blinds - Home</title>
+
+  <!-- Common styles -->
+  <link rel="stylesheet" href="global.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="logo">
+      <a href="index.html#home">
+        <img src="logo.png" alt="Roller Blinds Logo">
+      </a>
+    </div>
+
+    <nav class="nav-links">
+      <ul>
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="aboutus.html">About us</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="cta">
+      <a href="index.html#contact" class="btn btn-outline">Get Quote</a>
+    </div>
+
+    <!-- HAMBURGER BUTTON (mobile) -->
+    <button class="menu-toggle" type="button" onclick="toggleMenu()" aria-label="Open menu">
+      ☰
+    </button>
+  </header>
+
+  <!-- MOBILE SIDE MENU (overlay) -->
+  <div class="mobile-menu-overlay" onclick="overlayClick(event)">
+    <div class="mobile-menu">
+      <button class="close-menu" type="button" onclick="toggleMenu()" aria-label="Close menu">
+        ✕
+      </button>
+
+      <ul>
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="aboutus.html">About us</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+
+      <a href="index.html#contact" class="mobile-cta">Talk to an Expert</a>
+    </div>
+  </div>
+
+  <!-- HERO SECTION -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Stylish <span>Roller Blinds</span> for Every Space</h1>
+      <p>
+        We offer an extensive range of roller blinds designed to complement any interior.
+        Whether you’re looking for blackout blinds for your bedroom, sunscreen blinds for your living room,
+        or motorized blinds for your office — we’ve got you covered. All our products are made from durable
+        materials and come with professional installation support.
+      </p>
+
+      <div class="btn-group">
+        <a href="products.html" class="outline-btn">Our Blinds</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES SECTION -->
+  <section class="features-section" id="features">
+    <h2 class="section-title">Roller Blinds Features</h2>
+
+    <div class="features-container">
+
+      <!-- 1 -->
+      <div class="feature-card">
+        <div class="icon-box">
+          <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="#0b3a66" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="4" />
+            <line x1="12" y1="2" x2="12" y2="5" />
+            <line x1="12" y1="19" x2="12" y2="22" />
+            <line x1="4.22" y1="4.22" x2="6.34" y2="6.34" />
+            <line x1="17.66" y1="17.66" x2="19.78" y2="19.78" />
+            <line x1="2" y1="12" x2="5" y2="12" />
+            <line x1="19" y1="12" x2="22" y2="12" />
+            <line x1="4.22" y1="19.78" x2="6.34" y2="17.66" />
+            <line x1="17.66" y1="6.34" x2="19.78" y2="4.22" />
+          </svg>
+        </div>
+        <h3>UV Protection</h3>
+        <p>Blocks harsh sunlight and harmful UV rays while keeping your interiors cool.</p>
+      </div>
+
+      <!-- 2 -->
+      <div class="feature-card">
+        <div class="icon-box">
+          <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="#0b3a66" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <rect x="7" y="2" width="10" height="20" rx="4" />
+            <circle cx="12" cy="17" r="1.5" />
+            <line x1="12" y1="7" x2="12" y2="11" />
+          </svg>
+        </div>
+        <h3>Motorized Operation</h3>
+        <p>Control your blinds with a remote or smart home integration for convenience.</p>
+      </div>
+
+      <!-- 3 -->
+      <div class="feature-card">
+        <div class="icon-box">
+          <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="#0b3a66" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 10l9-7 9 7v10a2 2 0 0 1-2 2h-14a2 2 0 0 1-2-2z" />
+            <line x1="12" y1="13" x2="12" y2="17" />
+            <circle cx="12" cy="18" r="1" />
+          </svg>
+        </div>
+        <h3>Heat Reduction</h3>
+        <p>Reduces indoor heat and maintains a comfortable room temperature.</p>
+      </div>
+
+      <!-- 4 -->
+      <div class="feature-card">
+        <div class="icon-box">
+          <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="#0b3a66" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="5 9 9 9 13 5 13 19 9 15 5 15" />
+            <path d="M17 9a3 3 0 0 1 0 6" />
+            <path d="M19 7a6 6 0 0 1 0 10" />
+          </svg>
+        </div>
+        <h3>Noise Reduction</h3>
+        <p>Minimizes outside noise using thick, premium fabric layers.</p>
+      </div>
+
+      <!-- 5 -->
+      <div class="feature-card">
+        <div class="icon-box">
+          <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="#0b3a66" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <rect x="4" y="4" width="16" height="6" rx="1" />
+            <rect x="4" y="10" width="16" height="6" rx="1" />
+            <rect x="4" y="16" width="16" height="4" rx="1" />
+          </svg>
+        </div>
+        <h3>Premium Fabric Quality</h3>
+        <p>High-quality fabrics with blackout, sunscreen, and designer textures.</p>
+      </div>
+
+      <!-- 6 -->
+      <div class="feature-card">
+        <div class="icon-box">
+          <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="#0b3a66" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2s5 6 5 10a5 5 0 0 1-10 0c0-4 5-10 5-10z" />
+            <rect x="4" y="16" width="16" height="4" rx="1" />
+          </svg>
+        </div>
+        <h3>Waterproof Material</h3>
+        <p>Perfect for kitchens and bathrooms with moisture-resistant material.</p>
+      </div>
+
+      <!-- 7 -->
+      <div class="feature-card">
+        <div class="icon-box">
+          <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="#0b3a66" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="3" width="18" height="12" rx="2" />
+            <line x1="3" y1="9" x2="21" y2="9" />
+            <line x1="8" y1="3" x2="8" y2="15" />
+            <line x1="16" y1="3" x2="16" y2="15" />
+          </svg>
+        </div>
+        <h3>Privacy Control</h3>
+        <p>Ensures complete daytime and nighttime privacy for your home.</p>
+      </div>
+
+      <!-- 8 -->
+      <div class="feature-card">
+        <div class="icon-box">
+          <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="#0b3a66" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="3" width="18" height="18" rx="2" />
+            <path d="M7 12l4 4 6-6" />
+          </svg>
+        </div>
+        <h3>Easy Cleaning</h3>
+        <p>Low-maintenance blinds that stay clean with just a light wipe.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="gallery" id="gallery">
+    <h2>GALLERY</h2>
+
+    <div class="gallery-grid">
+
+      <div class="img-box">
+        <img src="https://static.asianpaints.com/content/dam/asian_paints/blog/december-22/living-room-curtain-designs-for-every-style/sheer-curtain-design.jpg" alt="dual-curtain">
+        <span class="img-text">DUAL CURTAIN</span>
+      </div>
+
+      <div class="img-box">
+        <img src="https://media.istockphoto.com/id/2208111831/photo/motorized-wood-blinds-operating-with-control-panel.webp?a=1&b=1&s=612x612&w=0&k=20&c=AQHXrIBq06Yh5eEl-aUaGbpMaJuArQ2UhBbit_0vN9k=" alt="motorised curtain track">
+        <span class="img-text">MOTORISED TRACK</span>
+      </div>
+
+      <div class="img-box big">
+        <img src="https://i.pinimg.com/474x/91/90/8d/91908d2991e12407d98a3886b200f883.jpg" alt="roller blinds">
+        <span class="img-text">ROLLER BLINDS</span>
+      </div>
+
+      <div class="img-box">
+        <img src="https://idealblinds.co.uk/wp-content/uploads/2014/05/vertical-blinds.jpg" alt="vertical blinds">
+        <span class="img-text">VERTICAL BLINDS</span>
+      </div>
+
+      <div class="img-box">
+        <img src="https://designdecorblinds.com/wp-content/uploads/2015/06/Collinear-blind_11.jpg" alt="collinear blinds">
+        <span class="img-text">COLLINEAR BLINDS</span>
+      </div>
+
+      <div class="img-box">
+        <img src="https://i.pinimg.com/474x/f4/ef/df/f4efdf74489878f56a2627d158128fdc.jpg" alt="wooden blinds">
+        <span class="img-text">WOODEN BLINDS</span>
+      </div>
+
+      <div class="img-box">
+        <img src="https://www.fabricsandpapers.com/media/wysiwyg/roman-blinds.jpg" alt="roman blinds">
+        <span class="img-text">ROMAN BLINDS</span>
+      </div>
+
+      <div class="img-box">
+        <img src="https://i.pinimg.com/564x/3d/d7/6d/3dd76d3c3d6be9e587a2e35d75294d7d.jpg" alt="skylite blinds">
+        <span class="img-text">SKYLITE BLINDS</span>
+      </div>
+
+      <div class="img-box">
+        <img src="https://www.chicology.com/cdn/shop/files/CellularShades_LF_MorningCroissant_1.jpg?v=1763077243&width=2000" alt="cellular blinds">
+        <span class="img-text">CELLULAR BLINDS</span>
+      </div>
+
+      <div class="img-box">
+        <img src="https://h2imports.ca/wp-content/uploads/2024/03/Zebra-blinds-1.webp" alt="zebra blinds">
+        <span class="img-text">ZEBRA BLINDS</span>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section contact">
+    <h2 class="section-title">Contact Us</h2>
+    <p>Call / WhatsApp us for measurements, pricing and installation details.</p>
+    <p style="margin-top: 8px;">WhatsApp: +91 98765 43210</p>
+  </section>
+
+  <!-- WHATSAPP BUTTON -->
+  <footer>
+    <a href="https://wa.me/919876543210?text=Hi%20I%20need%20help%20regarding%20your%20website"
+       class="whatsapp_float" target="_blank">
+      <img src="whatsapp.png" class="whatsapp_icon" alt="WhatsApp" />
+    </a>
+  </footer>
+
+  <!-- SIMPLE NAV TOGGLE JS (same pattern on all pages) -->
+  <script>
+    function toggleMenu() {
+      document.body.classList.toggle('menu-open');
+    }
+
+    function overlayClick(event) {
+      if (event.target.classList.contains('mobile-menu-overlay')) {
+        document.body.classList.remove('menu-open');
+      }
+    }
+
+    // close menu when any mobile-menu link clicked
+    document.addEventListener('click', function (e) {
+      if (e.target.closest('.mobile-menu a')) {
+        document.body.classList.remove('menu-open');
+      }
+    });
+  </script>
+</body>
+</html>
