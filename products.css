@@ -237,7 +237,7 @@
 
 @media (max-width: 900px) {
   .roller {
-    padding-top: 170px; /* navbar 2-line hone pe safe */
+    padding-top: 140px; /* navbar 2-line hone pe safe */
   }
 
   .roller h1 {
@@ -259,7 +259,7 @@
 
 @media (max-width: 600px) {
   .roller {
-    padding-top: 190px; /* mobile me thoda extra gap */
+    padding-top: 120px; /* mobile me thoda extra gap */
     padding-bottom: 24px;
   }
 
