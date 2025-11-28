@@ -142,7 +142,7 @@ body {
 /* ========== HOME PAGE: HERO SECTION ========== */
 .hero {
   height: 100vh;
-  margin-top: 80px; /* fixed navbar ke neeche */
+  margin-top: 80px; /* fixed navbar */
   background: url("bg-image.png") center/cover no-repeat fixed;
   display: flex;
   align-items: center;
